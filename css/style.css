@@ -1682,11 +1682,15 @@ a:active {
 }
 
 .filters {
-
+    margin: 39px 0 10px 0;
 }
 
 .filter-item {
-    padding: 16px 0 5px 0;
+    padding: 12px 0 5px 0;
+}
+
+.filter-item:nth-child(1) {
+    padding: 3px 0 5px 0;
 }
 
 .filter-item h3 {
