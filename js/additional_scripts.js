@@ -72,37 +72,27 @@ $(document).ready(function () {
 
 	if( $(".last-goods-slider").length > 0 ) {
 
-		var $example = $(".last-goods-slider-block");
+		var $lastGoodsSlider = $(".last-goods-slider-block");
 
-		var $frame = $example.find('.iframe');
+		var $frame = $lastGoodsSlider.find('.iframe');
 		var sly = new Sly($frame, {
 			horizontal: 1,
-			itemNav: 'forceCentered',
-			activateMiddle: false,
+			itemNav: 'basic',
 			smart: 1,
 			activateOn: 'click',
 			mouseDragging: 1,
 			touchDragging: 1,
 			releaseSwing: 1,
-			startAt: 2,
-			scrollBar: $example.find('.scrollbar'),
+			startAt: 3,
+			scrollBar: $lastGoodsSlider.find('.scrollbar'),
 			scrollBy: 1,
-			// pagesBar: $example.find('.pages'),
 			activatePageOn: 'click',
-			speed: 1200,
-			moveBy: 700,
+			speed: 300,
 			elasticBounds: 1,
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1
 
-			// Buttons
-			// forward: $example.find('.forward'),
-			// backward: $example.find('.backward'),
-			// prev: $example.find('.prev'),
-			// next: $example.find('.next'),
-			// prevPage: $example.find('.prevPage'),
-			// nextPage: $example.find('.nextPage')
 		}).init();
 
 	}

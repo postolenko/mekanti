@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<script type="text/javascript" src="vendors/js/parallax.js"></script>
+	<script type="text/javascript" src="vendors/js/sly.js"></script>
+	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	
+	<title>Title</title>
+	
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<!-- Header -->
+
+	<!-- Registration Popup -->
+
+	<div class="sign-in-popup registration-popup" data-popup="1">
+		<div class="inner">
+			<h3>Войти</h3>
+
+			<p>Авторизуйтесь, указав свои контактные данные, или воспользовавшись перечисленными выше сервисами.</p>
+
+			<div class="sign-in-form">
+				<form>
+					<div class="input-block">
+						<input type="text" placeholder="Имя" />
+					</div>
+					<div class="input-block">
+						<input type="text" placeholder="Фамилия" />
+					</div>
+					<div class="input-block">
+						<input type="email" placeholder="Email" />
+					</div>
+					<div class="input-block">
+						<input type="password" placeholder="Пароль" />
+					</div>
+					<div class="input-block">
+						<input type="password" placeholder="Подтвердите пароль" />
+					</div>
+					<div class="form-two-cols clearfix">
+						<div class="col col-1 left">
+							<div class="img-box">
+								<img src="img/captcha.jpg" alt="" />
+							</div>
+						</div>
+						<div class="col col-2 right">
+							<div class="input-block">
+								<input type="text" placeholder="Код с картинки" />
+							</div>
+						</div>
+					</div>
+					<p>Нажимая на кнопку подтверждения, я соглашаюсь <a href="#">с политикой обработки персональных данных</a></p>
+					<div class="buttons-block offset-ziro">
+						<div class="col col-1">
+							<button type="submit" class="dark-pill">Регистрация</button>
+						</div>
+						<div class="col col-2">
+							<a href="#" class="">Войти</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- /Registration Popup -->
+
+	<!-- Sign-in Popup -->
+
+	<div class="sign-in-popup" data-popup="2">
+		<div class="inner">
+			<h3>Войти</h3>
+
+			<p>Авторизуйтесь, указав свои контактные данные, или воспользовавшись перечисленными выше сервисами.</p>
+
+			<div class="sign-in-form">
+				<form>
+					<div class="input-block">
+						<input type="email" placeholder="Email" />
+					</div>
+					<div class="input-block">
+						<input type="password" placeholder="Пароль" />
+					</div>
+					<div class="form-two-cols sig-in-two-cols offset-ziro">
+						<div class="col col-1">
+							<div class="checkbox-block">
+								<input type="checkbox" class="input-checkbox" name="sidebar-checkbox_3" id="ch-7">
+								<label for="ch-7">Запомнить меня</label>
+							</div>
+						</div>
+						<div class="col col-2 align-right">
+							<a href="#" >Забыли пароль?</a>
+						</div>
+					</div>
+					<div class="form-three-cols offset-ziro">
+						<div class="col col-1">
+							<button type="submit" class="dark-pill">Регистрация</button>
+						</div>
+						<div class="col col-2">
+							<p>или</p>
+						</div>
+						<div class="col col-3">
+							<ul class="socials-list-icon">
+								<li><a href=""><img src="img/soc_icon_01.png" alt="" /></a></li>
+								<li><a href=""><img src="img/soc_icon_02.png" alt="" /></a></li>
+								<li><a href=""><img src="img/soc_icon_03.png" alt="" /></a></li>
+							</ul>
+						</div>
+						<a href="#" >Регистрация</a>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- /Sign-in Popup -->
+
+	<!-- Basket Popup -->
+
+	<div class="sign-in-popup basket-popup" data-popup="3">
+		<div class="inner">
+			<h3>Корзина</h3>
+
+			<div class="good-basket-cards">
+
+				<div class="good-basket-card">
+					<div class="col col-1">
+						<div class="img-box">
+							<img src="img/img_01.jpg" alt="" />
+						</div>
+					</div>
+					<div class="col col-2">
+						<p class="p-1">Блузка с лентой</p>
+						<p>Размер: S</p>
+						<div class="price-block">
+							<p>2 500 руб.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="good-basket-card">
+					<div class="col col-1">
+						<div class="img-box">
+							<img src="img/img_01.jpg" alt="" />
+						</div>
+					</div>
+					<div class="col col-2">
+						<p class="p-1">Блузка с лентой</p>
+						<p>Размер: S</p>
+						<div class="price-block">
+							<p>2 500 руб.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="total-price align-right">
+					<p>Итого: 8 564 руб.</p>
+				</div>
+
+				<div class="button-block align-center">
+					<button type="submit" class="dark-pill">Перейти в корзину</button>
+					<a href="#">Оформить заказ</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- /Basket Popup -->
+	
+
+	<header>
+
+		<div class="header-site">
+
+			<div class="header-row header-row-1">
+
+				<div class="row clearfix">
+
+					<div class="col col-1 left">
+						<a href="#" class="link-logo"><img src="img/logo.png" alt="" /></a>
+					</div>
+					<div class="col col-2 left offset-ziro">
+						<div class="contacts-block">
+							<h3>Бесплатно по России</h3>
+							<a href="tel:88005008792">8 (800) 500-87-92</a>
+							<p>Пн—Пт 10:00—20:00</p>
+						</div>
+						<div class="contacts-block">
+							<h3>Электронная почта</h3>
+							<a href="mail:shop@mekantti.ru">shop@mekantti.ru</a>
+						</div>
+					</div>
+					<div class="col col-3 left align-right">
+						<div class="sign-block offset-ziro">
+							<div class="col">
+								<a href="#" class="sign-link show_popup" data-show-popup = "1">Регистрация</a>
+							</div>
+							<div class="col">
+								<i class="user-icon"></i>
+								<a href="#" class="sign-link show_popup" data-show-popup = "2">Войти</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="header-row header-row-2">
+
+				<div class="row clearfix">
+
+					<div class="col col-1 left">
+						<button type="button" class="gamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="col col-2 left">
+						<div class="main-nav-block">
+							<ul class="main-nav">
+								<li><a href="#">Готовые поступления</a></li>
+								<li><a href="#">Гарантиии</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Политика</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Таблица размеров</a></li>
+								<li><a href="#">Отзывы покупателей</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-3 left align-right">
+						<a href="#" class="basket-block show_popup" data-show-popup = "3">
+							<div class="basket-col">
+								<div class="basket">
+									<i class="basket-icon"></i>
+									<p class="basket-count-goods">2</p>
+								</div>
+							</div>
+							<div class="basket-col">
+								<p>8 564 руб.</p>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="header-row header-row-3">
+				<div class="row clearfix">
+					<div class="col col-1 left">
+						<div class="catalog-item">
+							<a href="#" class="catalog-item-title">
+								<div class="catalog-icon-box">
+									<img src="img/catalog_icon_1.png" alt="" />
+								</div>
+								<h4>Одежда</h4>
+							</a>
+							<div class="dropdown-menu">
+								<ul>
+									<li><a href="#">БЛУЗКИ</a></li>
+									<li><a href="#">ВЕРХНЯЯ ОДЕЖДА</a></li>
+									<li><a href="#">ДЖИНСЫ</a></li>
+									<li><a href="#">КАРДИГАНЫ</a></li>
+									<li><a href="#">КОМБИНЕЗОНЫ</a></li>
+									<li><a href="#">КОСТЮМЫ</a></li>
+									<li><a href="#">МАЙКА</a></li>
+									<li><a href="#">ПЛАТЬЯ</a></li>
+									<li><a href="#">РУБАШКИ</a></li>
+									<li><a href="#">ФУТБОЛКИ</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog-item">
+							<a href="#" class="catalog-item-title">
+								<div class="catalog-icon-box">
+									<img src="img/catalog_icon_2.png" alt="" />
+								</div>
+								<h4>Обувь</h4>
+							</a>
+						</div>
+						<div class="catalog-item">
+							<a href="#" class="catalog-item-title">
+								<div class="catalog-icon-box">
+									<img src="img/catalog_icon_3.png" alt="" />
+								</div>
+								<h4>Сумки</h4>
+							</a>
+						</div>
+					</div>
+					<div class="col col-2 right">
+						<div class="search">
+							<form>
+								<input type="text" />
+								<button type="submit" class="submit-btn">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451" width="20" height="20"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" fill="#5a5a5a"/></svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+								
+	</header>
+
+	<!-- /Header -->
+
+		<!-- Content -->
+			<div class="content">
+
+				<!-- Section 1 Product Page -->
+
+				<section>
+					
+					<div class="row">
+
+						<!-- Breadcrumbs -->
+						
+						<div class="breadcrumbs-block">
+							<ul class="breadcrumbs">
+								<li><a href="#">MEKANTTI</a></li>
+								<li><a href="#">Верхняя одежда</a></li>
+							</ul>
+						</div>
+
+						<!-- /Breadcrumbs -->
+
+					</div>
+
+				</section>
+
+				<!-- /Section 1 Product Page -->
+
+				<!-- Section 2 Product Page -->
+
+				<section>
+					
+					<div class="row">
+
+						<h3>Просмотренные товары</h3>
+
+						<div class="last-goods-slider-block">
+							<div class="iframe">
+								<div class="last-goods-slider clearfix">
+								
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_01.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_02.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_03.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_01.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_02.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_03.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_01.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_02.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_03.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_01.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_02.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="good-cart">
+										<div class="inner">
+											<div class="thumb-content">
+												<div class="discount">
+													<p>-30</p>
+												</div>
+												<a href="#" class="img-box">
+													<img src="img/photo_03.jpg" alt="" />
+												</a>
+												<div class="descript">
+													<div class="desc-row">
+														<p class="p-1">Блузка с лентой</p>
+														<p>Размер: one size</p>
+													</div>
+													<div class="desc-row">
+														<p class="price">800 руб.</p>
+														<p class="old-price">3 990 руб.</p>
+													</div>
+													<div class="button-block clearfix">
+														<div class="col col-1 left">
+															<button type="button"><span class="white-cirlce"></span></button>
+															<button type="button"><span class="pink-cirlce"></span></button>
+														</div>
+														<div class="col col-2 right align-right">
+															<button type="button"><i class="heart-icon"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="scrollbar">
+								<div class="handle"></div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Section 2 Product Page -->
+
+			</div>
+		<!-- /Content -->
+
+		<!-- Footer -->
+
+		<footer>
+			
+			<div class="footer">
+				
+				<div class="row clearfix">
+					<div class="col col-1 left">
+						<a href="#" class="link-logo">
+							<img src="img/logo.png" alt="" />
+						</a>
+						<ul class="socials-list">
+							<li><a href="#">Vkontakte</a></li>
+							<li><a href="#">Facebook</a></li>			     
+						</ul>
+						<p class="copy">&copy; 2017 - MEKANTTI - Интернет-магазин модной одежды</p>
+					</div>
+					<div class="col col-2 left offset-ziro">
+						<div class="inner-col seo-list-block">
+							<h3>СЕРВИС</h3>
+							<ul class="seo-list">
+								<li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+								<li><a href="#">ГАРАНТИИ</a></li>
+								<li><a href="#">КОНТАКТЫ</a></li>
+								<li><a href="#">ПОЛИТИКА</a></li>
+								<li><a href="#">О НАС</a></li>
+								<li><a href="#">ТАБЛИЦА РАЗМЕРОВ</a></li>
+								<li><a href="#">ОТЗЫВЫ ПОКУПАТЕЛЕЙ</a></li>
+							</ul>
+						</div>
+						<div class="inner-col seo-list-block">
+							<h3>ЛИЧНЫЙ КАБИНЕТ</h3>
+							<ul class="seo-list">
+								<li><a href="#">МОИ ЗАКАЗЫ</a></li>
+								<li><a href="#">МОЙ ПРОФИЛЬ</a></li>
+								<li><a href="#">МОЯ КОРЗИНА</a></li>
+								<li><a href="#">ИЗБРАННОЕ</a></li>
+							</ul>
+						</div>
+						<div class="inner-col">
+							<h3>КОНТАКТЫ</h3>
+							<p>119019, Арбат 4, с тр 1, офис 1 <br />
+							<a href="tel:88005008792">8 (800) 500-87-92</a> <br />
+							<a href="mailto:shop@mek.antti.ru">shop@mek.antti.ru</a></p>
+							<p>ИП Ратушная Александра Игоревна<br />
+							ОГРНИП 317920400017405</p>
+						</div>
+					</div>
+					<div class="col col-3 left">
+						<ul class="payments-systems">
+							<li>
+								<img src="img/payment_system_1.png" alt="" />
+							</li>
+							<li>
+								<img src="img/payment_system_2.png" alt="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>			
+
+		</footer>
+
+		<!-- /Footer -->
+
+		<script src="js/scripts.js"></script>
+		<script src="js/additional_scripts.js"></script>
+	
+	</div>
+
+</body>
+</html>
