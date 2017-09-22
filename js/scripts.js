@@ -127,6 +127,66 @@ $(document).ready(function() {
 
     $(function() {
 
+        var tabsParent;
+        var tabLink;
+        var attrForTabLink;
+        var activeTabRadio;
+
+        $(".tabs-links").each(function() {
+
+            var tabsParent = $(this).closest(".tabs");
+            var tabLink = $(this).find(".tab-link");
+
+            if( tabLink.hasClass("active") ) {
+
+                var attrForTabLink = tabLink.attr("for");
+
+                var activeTabRadio = $(".tabs-links .radio-tab[id = '"+ attrForTabLink +"']");
+
+                // console.log(attrForTabLink);
+
+                activeTabRadio.prop("checked", true);
+
+            }
+
+        });
+
+
+        $(".tab-link").click(function (e) {
+
+            if( $(this).hasClass("active") ) {
+
+                e.preventDefault();
+
+                return false;
+
+            } else {
+
+                tabsParent = $(this).closest(".tabs");
+                attrForTabLink = $(this).attr("for");
+                activeTabRadio = $(".tabs-links .radio-tab[id = '"+ attrForTabLink +"']");
+                activeTabRadio.prop("checked", true);
+
+                tabsParent.find(".tab-link").each(function () {
+                    
+                    if( $(this).hasClass("active") ) {
+
+                        $(this).removeClass("active")
+
+                    }
+
+                });
+
+                $(this).addClass("active");
+
+            }
+
+        });
+
+    });
+
+    $(function() {
+
         var TOP_OFFSET = 23;
         var leftPosition;
 
