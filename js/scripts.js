@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    // ---------------------------
 
     var setFooterPositionInterval;
     var contentCoor;
@@ -14,11 +21,25 @@ $(document).ready(function() {
 
     getFooterPosition();
 
+    getAdaptivePositionElements();
+
+    getActiveFilterMenu();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+        //---------------------------
+
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+        //---------------------------
+
+         getAdaptivePositionElements();
+
+         getActiveFilterMenu();
 
     });
 
@@ -269,6 +290,54 @@ $(document).ready(function() {
             }
 
         }, 35);
+
+    }
+
+
+    function getAdaptivePositionElements() {
+
+        $(".append-elem").each(function() {
+
+            if( $(this).hasClass("desktop-position") ) {
+
+                screenParam = parseInt( $(this).attr("data-min-screen") );
+
+                indexElem = $(this).attr("data-append-descktop-elem");
+
+                if( bodyWidth <= screenParam ) {
+
+                    $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
+
+                }
+
+                 if( bodyWidth > screenParam ) {
+
+                    $("[data-append-descktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
+
+                }
+
+            }
+
+        });
+
+    }
+
+
+    function getActiveFilterMenu() {
+        
+        if( bodyWidth <= 600 ) {
+
+            $(".filters").removeClass("active");
+
+            $(".filters").find(".sidebar-dropdown-menu").slideUp(100);
+
+        } else {
+
+            $(".filters").addClass("active");
+
+            $(".filters").find(".sidebar-dropdown-menu").slideDown(100);
+
+        }
 
     }
 

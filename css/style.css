@@ -3003,13 +3003,19 @@ a.underlined-link:hover {
 
 }
 
-.num-cirlce-block {
+.num-circle-block {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+}
+
+.num-circle {
     display: inline-block;
     vertical-align: top;
     min-width: 62px;
-    min-height: 62px;
-    margin: 10px 0;
+    min-height: 62px;    
     border: 3px solid #ccb18a;
+    text-align: center;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -3017,7 +3023,8 @@ a.underlined-link:hover {
     border-radius: 50%;
 }
 
-.steps-thumbnails .thumbnail .num-cirlce-block p {
+.steps-thumbnails .thumbnail .num-circle p {
+    display: block;
     font-family: "Lato", Arial, Verdana, sans-serif;
     font-size: 20px;
     line-height: 54px;

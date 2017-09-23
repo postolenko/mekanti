@@ -9,11 +9,15 @@
 })(jQuery);
 
 $(document).ready(function () {
+
+	var $lastGoodsSlider;
+	var $frame;
+	var sly;
 	
 	$(".big-slider").not(".slick-initialized").slick({
 		dots: false,
 		arrows: false,
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 10000,
 		speed: 1200,
 		slidesToShow: 1,
@@ -24,58 +28,39 @@ $(document).ready(function () {
 	$(".miniature-slider").not(".slick-initialized").slick({
 		dots: false,
 		arrows: false,
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 10000,
 		speed: 1200,
 		vertical: true,
 		slidesToShow: 4,
 		slidesToScroll : 1,
 		focusOnSelect: true,
-		asNavFor : $(".big-slider")
-		// responsive: [
-		//     {
-		//       breakpoint: 1024,
-		//       settings: {
-		//         slidesToShow: 2
-		//       }
-		//     },
-		//     {
-		//      breakpoint: 768,
-		//       settings: {
-		//         slidesToShow: 2
-		//       }
-		//     },
-		//     {
-		//      breakpoint: 700,
-		//       settings: {
-		//         slidesToShow: 3,
-		//         vertical: false
-		//       }
-		//     },
-		//     {
-		//      breakpoint: 532,
-		//       settings: {
-		//         slidesToShow: 2,
-		//         vertical: false
-		//       }
-		//     },
-		//     {
-		//       breakpoint: 350,
-		//       settings: {
-		//         slidesToShow: 1,
-		//         vertical: false
-		//       }
-		//     }
-		//   ]
+		asNavFor : $(".big-slider"),
+		responsive: [
+		    {
+		     breakpoint: 600,
+		      settings: {
+		      	vertical: false,
+		        slidesToShow: 3
+		      }
+		    },
+		    {
+		     breakpoint: 480,
+		      settings: {
+		        slidesToShow: 2,
+		        vertical: false
+		      }
+		    }
+		  ]
 	});
 
 
 	if( $(".last-goods-slider").length > 0 ) {
 
-		var $lastGoodsSlider = $(".last-goods-slider-block");
+		$lastGoodsSlider = $(".last-goods-slider-block");
 
-		var $frame = $lastGoodsSlider.find('.iframe');
-		var sly = new Sly($frame, {
+		$frame = $lastGoodsSlider.find('.iframe');
+		sly = new Sly($frame, {
 			horizontal: 1,
 			itemNav: 'basic',
 			smart: 1,
@@ -97,4 +82,12 @@ $(document).ready(function () {
 
 	}
 
+	$(window).resize(function(){
+
+		sly.reload();
+
+	});
+
+
 });
+
