@@ -233,6 +233,8 @@ ol li:before {
     width: 9px;
     content: "\0320";
     font-weight: bold;
+    position: relative;
+    top: -6px;
 }
 
 a {
@@ -423,6 +425,10 @@ a:active {
 
 .breadcrumbs li:last-child a:hover {
     color: #9a9a9a;
+}
+
+.breadcrumbs-block + h2 {
+    padding: 0 0 10px 0;
 }
 
 /*-- /Breadcrumbs --*/
@@ -2961,6 +2967,126 @@ a.underlined-link:hover {
 }
 
 /*-- /Section 2 Product Page --*/
+
+
+/*-- Section 1 Payment Page --*/
+
+.steps-thumbnails {
+    margin: 31px 0;
+}
+
+.steps-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    text-align: center;
+    padding: 16px 2%;
+    position: relative;
+}
+
+.steps-thumbnails .thumbnail:after {
+    display: block;
+    content: "";
+    width: 65%;
+    height: 1px;
+    background: #e2e2e2;
+    position: absolute;
+    top: 57px;
+    right: -32%;
+}
+
+.steps-thumbnails .thumbnail:nth-child(3n):after {
+    display: none;
+}
+
+.steps-thumbnails .thumbnail .inner {
+
+}
+
+.num-cirlce-block {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 62px;
+    min-height: 62px;
+    margin: 10px 0;
+    border: 3px solid #ccb18a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.steps-thumbnails .thumbnail .num-cirlce-block p {
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 54px;
+    font-weight: bold;
+    color: #2f2f2f;
+    padding: 0 3% 0 0;
+}
+
+.steps-thumbnails .thumbnail p {
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: normal;
+    color: #555555;
+    padding: 20px 0 10px 0;
+}
+
+
+/*-- /Section 1 Payment Page --*/
+
+/*-- Section 2 Payment Page --*/
+
+.payment-info-thumbnails {
+    margin: 10px 0 17px 0;
+}
+
+.payment-thumbnail {
+    display: inline-table;
+    vertical-align: top;
+    width: 50%;
+    margin: 15px 0;
+}
+
+.payment-thumbnail .col {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.payment-thumbnail .col-1 {
+    width: 100px;
+    padding: 17px 0 0 0;
+}
+
+.payment-thumbnail .col-2 {
+    width: auto;
+    padding: 0 2% 0 0;
+}
+
+.payment-thumbnail .col-1 img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 98%;
+}
+
+.payment-thumbnail h3 {
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #333333;
+    padding: 11px 0 4px 0;
+}
+
+.payment-thumbnail ol {
+
+}
+
+/*-- /Section 2 Payment Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
