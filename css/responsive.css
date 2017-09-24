@@ -265,7 +265,7 @@
 		display: none;
 		width: 100%;
 		height: 100vh;
-		padding: 72px 1% 100px 9%;
+		padding: 72px 1% 60px 9%;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -485,7 +485,7 @@
 	}
 
 	.main-nav-block {
-	    padding: 55px 1% 20px 9%;
+	    padding: 72px 1% 60px 9%;
 	}
 
 	.catalog-item {
