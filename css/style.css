@@ -2719,6 +2719,8 @@ a.underlined-link:hover {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
+    opacity: .01;
 }
 
 .choisen-item.size-radio input[type="radio"]:checked + label {

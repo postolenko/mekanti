@@ -55,7 +55,7 @@ $(document).ready(function () {
 	});
 
 
-	if( $(".last-goods-slider").length > 0 ) {
+	// if( $(".last-goods-slider").length > 0 ) {
 
 		$lastGoodsSlider = $(".last-goods-slider-block");
 
@@ -80,7 +80,7 @@ $(document).ready(function () {
 
 		}).init();
 
-	}
+	// }
 
 	$(window).resize(function(){
 
