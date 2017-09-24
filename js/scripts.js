@@ -160,6 +160,30 @@ $(document).ready(function() {
           }
         });
 
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27 ) {
+
+               $(".dropdown-menu").fadeOut(300);
+
+            }
+
+        });
+
+        $(document).mouseup(function (e) {
+
+            hide_element = $('.dropdown-menu');
+
+            if (!hide_element.is(e.target)
+
+                && hide_element.has(e.target).length === 0) {
+
+                $(".dropdown-menu").fadeOut(300);
+            }
+
+        });
+
     });
 
     $(function() {
