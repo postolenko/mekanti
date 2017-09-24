@@ -363,22 +363,26 @@ $(document).ready(function() {
 
         $(document).mouseup(function (e) {
 
-            hide_element = $('.resp-popup');
+            if( bodyWidth <= 600 ) { 
 
-            if (!hide_element.is(e.target)
+                hide_element = $('.resp-popup');
 
-                && hide_element.has(e.target).length === 0) {
+                if (!hide_element.is(e.target)
 
-                $(".resp-popup").fadeOut(300);
+                    && hide_element.has(e.target).length === 0) {
 
-                $(".show_resp_popup").removeClass("active");
+                    $(".resp-popup").fadeOut(300);
+
+                    $(".show_resp_popup").removeClass("active");
+                }
+
             }
 
         });
 
         $(this).keydown(function(eventObject){
 
-            if (eventObject.which == 27) {
+            if (eventObject.which == 27 && bodyWidth <= 600) {
 
                $(".resp-popup").fadeOut(300);
 
