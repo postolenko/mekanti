@@ -2584,6 +2584,7 @@ a.underlined-link:hover {
     top: 0;
     left: 0;
     z-index: -1;
+    opacity: .01;
 }
 
 .tab-header {
@@ -2713,6 +2714,17 @@ a.underlined-link:hover {
 }
 
 .choisen-item.size-radio input[type="radio"] {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .01;
+}
+
+.radio-block input[type="radio"] {
     display: block;
     width: 1px;
     height: 1px;
