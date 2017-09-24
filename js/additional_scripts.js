@@ -8,7 +8,9 @@
 
 })(jQuery);
 
-$(document).ready(function () {
+// $(document).ready(function () {
+jQuery(function($){
+	'use strict';
 
 	var $lastGoodsSlider;
 	var $frame;
@@ -55,11 +57,11 @@ $(document).ready(function () {
 	});
 
 
-	// if( $(".last-goods-slider").length > 0 ) {
+	if( $(".last-goods-slider").length > 0 ) {
 
 		$lastGoodsSlider = $(".last-goods-slider-block");
 
-		$frame = $lastGoodsSlider.find('.iframe');
+		$frame = $lastGoodsSlider.find(".sly-block");
 		sly = new Sly($frame, {
 			horizontal: 1,
 			itemNav: 'basic',
@@ -69,9 +71,9 @@ $(document).ready(function () {
 			touchDragging: 1,
 			releaseSwing: 1,
 			startAt: 3,
-			scrollBar: $lastGoodsSlider.find('.scrollbar'),
+			scrollBar: $lastGoodsSlider.find(".scrollbar"),
 			scrollBy: 1,
-			activatePageOn: 'click',
+			activatePageOn: "click",
 			speed: 300,
 			elasticBounds: 1,
 			dragHandle: 1,
@@ -80,7 +82,7 @@ $(document).ready(function () {
 
 		}).init();
 
-	// }
+	}
 
 	$(window).resize(function(){
 
