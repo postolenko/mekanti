@@ -40,7 +40,10 @@
 
 	<!-- Registration Popup -->
 
-	<div class="sign-in-popup registration-popup" data-popup="1">
+	<div class="sign-in-popup scroll registration-popup" data-popup="1">
+
+		<button type="button" class="close-popup"></button>
+
 		<div class="inner">
 			<h3>Войти</h3>
 
@@ -94,7 +97,10 @@
 
 	<!-- Sign-in Popup -->
 
-	<div class="sign-in-popup" data-popup="2">
+	<div class="sign-in-popup scroll" data-popup="2">
+
+		<button type="button" class="close-popup"></button>
+
 		<div class="inner">
 			<h3>Войти</h3>
 
@@ -145,7 +151,10 @@
 
 	<!-- Basket Popup -->
 
-	<div class="sign-in-popup basket-popup" data-popup="3">
+	<div class="sign-in-popup scroll basket-popup" data-popup="3">
+
+		<button type="button" class="close-popup"></button>
+
 		<div class="inner">
 			<h3>Корзина</h3>
 
@@ -206,31 +215,39 @@
 
 				<div class="row clearfix">
 
+					<div class="respmenubtn-col left append-elem" data-append-elem = "5" ></div>
+
 					<div class="col col-1 left">
 						<a href="#" class="link-logo"><img src="img/logo.png" alt="" /></a>
+						<a href="#" class="logo-resp"><img src="img/logo_resp.png" alt="" /></a>
 					</div>
 					<div class="col col-2 left offset-ziro">
-						<div class="contacts-block">
-							<h3>Бесплатно по России</h3>
-							<a href="tel:88005008792">8 (800) 500-87-92</a>
-							<p>Пн—Пт 10:00—20:00</p>
-						</div>
-						<div class="contacts-block">
-							<h3>Электронная почта</h3>
-							<a href="mail:shop@mekantti.ru">shop@mekantti.ru</a>
+						<div class="desktop-position append-elem"  data-append-descktop-elem = "4" data-min-screen = "768">
+							<div class="contacts-block">
+								<h3>Бесплатно по России</h3>
+								<a href="tel:88005008792">8 (800) 500-87-92</a>
+								<p>Пн—Пт 10:00—20:00</p>
+							</div>
+							<div class="contacts-block">
+								<h3>Электронная почта</h3>
+								<a href="mail:shop@mekantti.ru">shop@mekantti.ru</a>
+							</div>
 						</div>
 					</div>
 					<div class="col col-3 left align-right">
-						<div class="sign-block offset-ziro">
-							<div class="col">
-								<a href="#" class="sign-link show_popup" data-show-popup = "1">Регистрация</a>
-							</div>
-							<div class="col">
-								<i class="user-icon"></i>
-								<a href="#" class="sign-link show_popup" data-show-popup = "2">Войти</a>
+						<div class="desktop-position append-elem"  data-append-descktop-elem = "3" data-min-screen = "768">
+							<div class="sign-block offset-ziro">
+								<div class="col">
+									<a href="#" class="sign-link show_popup" data-show-popup = "1">Регистрация</a>
+								</div>
+								<div class="col">
+									<i class="user-icon"></i>
+									<a href="#" class="sign-link show_popup" data-show-popup = "2">Войти</a>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="append-elem append-elem-6 left" data-append-elem = "6" ></div>
 
 				</div>
 
@@ -240,8 +257,8 @@
 
 				<div class="row clearfix">
 
-					<div class="col col-1 left">
-						<button type="button" class="gamburger">
+					<div class="col col-1 left desktop-position append-elem"  data-append-descktop-elem = "5" data-min-screen = "768">
+						<button type="button" class="respmenubtn">
 							<span></span>
 							<span></span>
 							<span></span>
@@ -249,6 +266,7 @@
 					</div>
 					<div class="col col-2 left">
 						<div class="main-nav-block scroll">
+							<div class="append-elem append-elem-2 bottom-row" data-append-elem = "2" ></div>
 							<ul class="main-nav">
 								<li><a href="#">Готовые поступления</a></li>
 								<li><a href="#">Гарантиии</a></li>
@@ -258,9 +276,11 @@
 								<li><a href="#">Таблица размеров</a></li>
 								<li><a href="#">Отзывы покупателей</a></li>
 							</ul>
+							<div class="append-elem append-elem-3 bottom-row" data-append-elem = "3" ></div>
+							<div class="append-elem bottom-row" data-append-elem = "4" ></div>
 						</div>
 					</div>
-					<div class="col col-3 left align-right">
+					<div class="col col-3 left align-right desktop-position append-elem"  data-append-descktop-elem = "6" data-min-screen = "768">
 						<a href="#" class="basket-block show_popup" data-show-popup = "3">
 							<div class="basket-col">
 								<div class="basket">
@@ -268,7 +288,7 @@
 									<p class="basket-count-goods">2</p>
 								</div>
 							</div>
-							<div class="basket-col">
+							<div class="basket-col price-val-block">
 								<p>8 564 руб.</p>
 							</div>
 						</a>
@@ -321,13 +341,15 @@
 						</div>
 					</div>
 					<div class="col col-2 right">
-						<div class="search">
-							<form>
-								<input type="text" />
-								<button type="submit" class="submit-btn">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451" width="20" height="20"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" fill="#5a5a5a"/></svg>
-								</button>
-							</form>
+						<div class="desktop-position append-elem"  data-append-descktop-elem = "2" data-min-screen = "768">
+							<div class="search">
+								<form>
+									<input type="text" />
+									<button type="submit" class="submit-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451" width="20" height="20"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" fill="#5a5a5a"/></svg>
+									</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>

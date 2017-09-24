@@ -182,7 +182,11 @@ section {
 }
 
 h1 {
-
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #333333;
 }
 
 h2 {
@@ -209,7 +213,6 @@ p {
     line-height: 23px;
     font-weight: normal;
     color: #555555;
-    /*padding: 12px 0;*/
 }
 
 li {
@@ -335,10 +338,6 @@ a:active {
 
 .breadcrumbs-block {
     padding: 0 0 4px 0;
-}
-
-.breadcrumbs {
-
 }
 
 .breadcrumbs li {
@@ -486,32 +485,34 @@ a:active {
     border: 1px solid #ccb18a;
 }
 
+.h-block h2 {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 60%;
+    padding: 0;
+}
+
+.h-block .right-col {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 40%;
+    text-align: right;
+}
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
 
-.header-site {
-
-}
-
-.header-site .header-row {
-
-}
 
 .header-row-1 {
     padding: 25px 0;
-}
-
-.header-row-2 {
-
+    position: relative;
+    z-index: 6;
+    background: rgb(255, 255, 255);
 }
 
 .header-row-3 {
     padding: 21px 0 12px 0;
-}
-
-.header-row .col {
-
 }
 
 .header-row-1 .col-1 {
@@ -528,6 +529,19 @@ a:active {
     padding: 9px 0;
 }
 
+.respmenubtn-col {
+    display: none;
+    width: 26%;
+    padding: 14px 0 0 0;
+}
+
+.append-elem-6 {
+    display: none;
+    width: 26%;
+    text-align: right;
+    padding: 13px 0;
+}
+
 .link-logo {
     display: inline-block;
     vertical-align: top;
@@ -537,6 +551,22 @@ a:active {
 }
 
 .link-logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-resp {
+    /*display: inline-block;*/
+    display: none;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+}
+
+.link-resp img {
     display: block;
     width: auto;
     height: auto;
@@ -598,7 +628,6 @@ a:active {
 .contacts-block a.active,
 .contacts-block a:active {
     color: #cd8c8c;
-
 }
 
 .contacts-block a:hover {
@@ -612,10 +641,6 @@ a:active {
     font-weight: bold;
     color: #a8a7a7;
     padding: 1px 0;
-}
-
-.sign-block {
-
 }
 
 .sign-block .col {
@@ -694,29 +719,18 @@ a:active {
 }
 
 .header-row-2 .col-1 {
+    display: none;
     width: 3%;
     padding: 14px 0 0 0;
 }
 
 .header-row-2 .col-2 {
-    width: 79%;
+    width: 82%;
 }
 
 .header-row-2 .col-3 {
     width: 18%;
     padding: 7px 0 0 0;
-}
-
-.gamburger {
-
-}
-
-.main-nav-block {
-
-}
-
-.main-nav {
-
 }
 
 .main-nav li {
@@ -811,7 +825,6 @@ a:active {
 .main-nav li a.active:after,
 .main-nav li a:active:after {
     background: #ccb18a;
-
 }
 
 .main-nav li a:hover:after {
@@ -986,16 +999,13 @@ a:active {
     top: -27px;
     left: -21%;
     z-index: 2;
+    text-align: left;
     padding: 87px 23% 20px 23%;
     background: rgb(255, 255, 255);
     -webkit-box-shadow: 0px 1px 21px 0px rgba(51, 51, 51, 0.15);
     -moz-box-shadow: 0px 1px 21px 0px rgba(51, 51, 51, 0.15);
     -o-box-shadow: 0px 1px 21px 0px rgba(51, 51, 51, 0.15);
     box-shadow: 0px 1px 21px 0px rgba(51, 51, 51, 0.15);
-}
-
-.dropdown-menu ul {
-
 }
 
 .dropdown-menu ul li {
@@ -1110,7 +1120,7 @@ a:active {
 
 /* ----- Responsive Menu Button ------ */
 
-.gamburger {
+.respmenubtn {
     display: inline-block;
     vertical-align: top;
     width: 20px;
@@ -1140,17 +1150,60 @@ a:active {
     transition-timing-function: ease;
 }
 
-.gamburger span {
+.respmenubtn span {
     display: block;
     width: 18px;
     height: 1px;
-    background: rgb(190, 190, 190);
+    background: #404040;
     margin: 0 auto 4px auto;
 }
 
-.gamburger span:last-child {
+.respmenubtn span:last-child {
     margin: 0 auto;
 }
+
+.respmenubtn span:last-child {
+    margin: 0 auto;
+}
+
+.respmenubtn:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+.respmenubtn:hover span {
+    background: #404040;
+}
+
+.respmenubtn.active span {
+    position: relative;
+    width: 23px;
+    top: 0;
+    left: -2px;
+    background: #404040;
+}
+
+.respmenubtn.active span:last-child {
+    display: none;
+}
+
+.respmenubtn.active span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+    left: -2px;
+}
+
+.respmenubtn.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 /* ----- / Responsive Menu Button ------ */
 
 /*-- Registration Popup --*/
@@ -1162,7 +1215,7 @@ a:active {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 4;
+    z-index: 7;
     padding: 21px 2%;
     background: rgb(255, 255, 255);
     -webkit-box-shadow: 0px 1px 21px 0px rgba(51, 51, 51, 0.15);
@@ -1171,8 +1224,33 @@ a:active {
     box-shadow: 0px 1px 21px 0px rgba(51, 51, 51, 0.15);
 }
 
-.sign-in-popup .inner {
+.close-popup {
+    /*display: block;*/
+    display: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 2%;
+    border: 1px solid transparent;
+    background: transparent;
+}
 
+.close-popup:after {
+    display: block;
+    content: "\2715";
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.sign-in-popup .inner {
+    display: block;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 .sign-in-popup h3 {
@@ -1309,10 +1387,6 @@ a:active {
     border: 1px solid #ccb18a;
 }
 
-.form-two-cols {
-
-}
-
 .form-two-cols .col {
     display: inline-block;
     vertical-align: top;
@@ -1350,10 +1424,6 @@ a:active {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-}
-
-.form-two-cols .col-2 input {
-
 }
 
 .form-two-cols a {
@@ -1415,20 +1485,12 @@ a:active {
     vertical-align: middle;
 }
 
-.form-three-cols .col-1 {
-
-}
-
 .form-three-cols .col-2 {
     text-align: center;
 }
 
 .form-three-cols .col-3 {
     text-align: right;
-}
-
-.form-three-cols {
-
 }
 
 .form-three-cols .col {
@@ -1454,10 +1516,6 @@ a:active {
     max-width: 136px;
     margin: 18px 0 12px 0;
     padding: 11px 2% 12px 2%;
-}
-
-.socials-list-icon {
-
 }
 
 .socials-list-icon li {
@@ -1491,10 +1549,6 @@ a:active {
     max-width: 270px;
 }
 
-.good-basket-cards {
-
-}
-
 .good-basket-card {
     display: table;
     width: 100%;
@@ -1507,11 +1561,11 @@ a:active {
 }
 
 .good-basket-card .col-1 {
-    width: 42%;
+    width: 100px;
 }
 
 .good-basket-card .col-2 {
-    width: 58%;
+    width: auto;
     position: relative;
     padding: 0 0 16px 0;
 }
@@ -1570,10 +1624,6 @@ a:active {
     padding: 5px 0;
 }
 
-.good-basket-card .total-price p {
-
-}
-
 .good-basket-cards .button-block {
     margin: 14px 0 0 0;
     border-top: 1px solid #eaeaea;
@@ -1584,7 +1634,6 @@ a:active {
     padding: 12px 2% 13px 2%;
 }
 
-
 /*-- /Basket Popup --*/
 
 /*-------------------------------------------*/
@@ -1593,14 +1642,6 @@ a:active {
 
 /*-- Section 1 Main Page --*/
 
-.two-cols-templ {
-
-}
-
-.two-cols-templ .col {
-
-}
-
 .two-cols-templ .col-1 {
     width: 26%;
     padding: 0 2.5% 0 0;
@@ -1608,14 +1649,6 @@ a:active {
 
 .two-cols-templ .col-2 {
     width: 74%;
-}
-
-.sidebar {
-
-}
-
-.sidebar-catalog {
-
 }
 
 .dropdown-catalog-item {
@@ -1692,6 +1725,33 @@ a:active {
 
 .filters {
     margin: 39px 0 10px 0;
+}
+
+.filters-menu {
+    position: relative;
+}
+
+.close-menu {
+    /*display: block;*/
+    display: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: -4px;
+    right: 2%;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.close-menu:after {
+    display: block;
+    content: "\2715";
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #333333;
 }
 
 .filter-item {
@@ -1796,24 +1856,6 @@ a:active {
     background: #ccb18a;
 }
 
-.h-block {
-
-}
-
-.h-block h2 {
-    display: inline-block;
-    vertical-align: baseline;
-    width: 60%;
-    padding: 0;
-}
-
-.h-block .right-col {
-    display: inline-block;
-    vertical-align: baseline;
-    width: 40%;
-    text-align: right;
-}
-
 .sort-block p {
     display: inline-block;
     vertical-align: baseline;
@@ -1884,7 +1926,6 @@ a.brown-link:hover {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    /*overflow: hidden;*/
     margin: 5px 0 0 0;
     padding: 10px 1.5%;
     position: relative;
@@ -2081,10 +2122,6 @@ a.brown-link:hover {
     padding: 13px 5% 0 5%;
 }
 
-.good-cart .button-block .col {
-
-}
-
 .good-cart .button-block .col-1 {
     width: 50%;
     text-align: left;
@@ -2103,7 +2140,6 @@ a.brown-link:hover {
     background: transparent;
     margin: 3px 6% 3px 0;
 }
-
 
 .good-cart .button-block .col-1 button {
     -webkit-border-radius: 50%;
@@ -2172,10 +2208,6 @@ a.brown-link:hover {
 
 .two-cols-cart-block {
     margin: 44px 0 66px 0;
-}
-
-.two-cols-cart-block .col {
-
 }
 
 .two-cols-cart-block .col-1 {
@@ -2295,10 +2327,6 @@ a.brown-link:hover {
     color: #2f2f2f;
 }
 
-.big-slider {
-
-}
-
 .big-slider .slide {
     display: block;
     width: 100%;
@@ -2321,14 +2349,6 @@ a.brown-link:hover {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.cart-descript-block {
-
-}
-
-.cart-descript-header {
-
 }
 
 .two-cols-cart-block .cart-descript-header .col-1 {
@@ -2357,10 +2377,6 @@ a.brown-link:hover {
     font-weight: normal;
     color: #a1a1a1;
     padding: 4px 0;
-}
-
-.favorite-block {
-
 }
 
 .favorite-block .heart-icon {
@@ -2426,14 +2442,6 @@ a.underlined-link:hover {
     margin: 12px 0;
 }
 
-.tabs-links-block {
-
-}
-
-.tabs-links {
-
-}
-
 .tabs-links li {
     display: inline-block;
     vertical-align: top;
@@ -2484,10 +2492,6 @@ a.underlined-link:hover {
     color: #292929;
 }
 
-.tabs-content {
-
-}
-
 .tab-wrapp .tab {
     display: none;
 }
@@ -2505,10 +2509,6 @@ a.underlined-link:hover {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.tab-content {
-
 }
 
 .tab-header {
@@ -2540,7 +2540,6 @@ a.underlined-link:hover {
     display: block;
     margin: 12px 0 19px 0;
 }
-
 
 .table-row {
     display: table;
@@ -2602,10 +2601,6 @@ a.underlined-link:hover {
     position: relative;
 }
 
-.choisen-item.size-radio {
-
-}
-
 .choisen-item.size-radio label {
     display: inline-block;
     vertical-align: top;
@@ -2654,14 +2649,6 @@ a.underlined-link:hover {
 .choisen-item.size-radio input[type="radio"]:checked + label {
     background: #ccb18a;
     border: 1px solid #ccb18a;
-}
-
-.choisen-item.color-radio {
-
-}
-
-.price-block {
-
 }
 
 .price-block p {
@@ -2886,10 +2873,6 @@ a.underlined-link:hover {
     margin: 64px 0 17px 0;
 }
 
-.two-cols-block .col {
-
-}
-
 .two-cols-block .col h3 {
     padding: 0;
 }
@@ -2902,10 +2885,6 @@ a.underlined-link:hover {
 .two-cols-block .col-2 {
     width: 50%;
     padding: 3px 0 0 1%;
-}
-
-.catalog-thmbnails.more-goods-thumbnails {
-    /*margin: 1px 0;*/
 }
 
 .catalog-thmbnails.more-goods-thumbnails .good-cart {
@@ -2999,10 +2978,6 @@ a.underlined-link:hover {
     display: none;
 }
 
-.steps-thumbnails .thumbnail .inner {
-
-}
-
 .num-circle-block {
     display: inline-block;
     vertical-align: top;
@@ -3041,7 +3016,6 @@ a.underlined-link:hover {
     color: #555555;
     padding: 20px 0 10px 0;
 }
-
 
 /*-- /Section 1 Payment Page --*/
 
@@ -3087,10 +3061,6 @@ a.underlined-link:hover {
     font-weight: bold;
     color: #333333;
     padding: 11px 0 4px 0;
-}
-
-.payment-thumbnail ol {
-
 }
 
 /*-- /Section 2 Payment Page --*/
@@ -3202,10 +3172,6 @@ p.copy {
     color: #8a8a8a;
 }
 
-.footer .inner-col {
-
-}
-
 .footer .inner-col h3 {
     font-family: "Lato", Arial, Verdana, sans-serif;
     font-size: 13px;
@@ -3217,10 +3183,6 @@ p.copy {
 
 .footer .inner-col p {
     padding: 0 0 15px 0;
-}
-
-.seo-list {
-
 }
 
 .seo-list li {
@@ -3271,11 +3233,6 @@ p.copy {
 
 .seo-list li a:hover {
     border-bottom: 1px solid #555555;
-}
-
-
-.payments-systems {
-
 }
 
 .payments-systems li {

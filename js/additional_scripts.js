@@ -84,7 +84,11 @@ $(document).ready(function () {
 
 	$(window).resize(function(){
 
-		sly.reload();
+		if( $(".last-goods-slider").length > 0 ) {
+
+			sly.reload();
+
+		}
 
 	});
 
