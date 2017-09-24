@@ -1786,6 +1786,7 @@ a:active {
 
 .range-inputs input {
     width: 100%;
+    height: 40px;
     padding: 0 7%;
     border: 1px solid #bfbfbf;
     font-family: "Lato", Arial, Verdana, sans-serif;
