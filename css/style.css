@@ -558,14 +558,6 @@ a:active {
     max-height: 100%;
 }
 
-.logo-resp {
-    /*display: inline-block;*/
-    display: none;
-    vertical-align: top;
-    width: auto;
-    height: auto;
-}
-
 .link-resp img {
     display: block;
     width: auto;
@@ -858,17 +850,6 @@ a:active {
 .basket {
     position: relative;
     padding: 0 10px 0 0;
-}
-
-.basket-icon {
-    display: inline-block;
-    vertical-align: top;
-    width: 17px;
-    height: 20px;
-    background-image: url(../img/basket_icon.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
 }
 
 .basket p.basket-count-goods {

@@ -464,14 +464,6 @@
 	    padding: 9px 0 0 0;
 	}
 
-	.header-site .link-logo {
-		display: none;
-	}
-
-	.logo-resp {
-	    display: inline-block;
-	}
-
 	.append-elem-6 {
 	    padding: 5px 0;
 	}
@@ -621,6 +613,10 @@
 	}
 
 	/*-- Header --*/
+
+	.header-row-1 {
+	    padding: 4px 0 0 0;
+	}
 
 	.catalog-item {
 	    margin: 0 4px 0 0;
